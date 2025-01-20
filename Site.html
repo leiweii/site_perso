@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Personnel</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur Mon Site Personnel</h1>
+        <nav>
+            <ul>
+                <li><a href="Site.html">Accueil</a></li>
+                <li><a href="page2.html">Romans</a></li>
+                <li><a href="Page3.html">Jeux</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>À propos de mon site</h2>
+            <p>Bienvenue sur mon site où je partage mes passions pour les romans et les jeux.</p>
+        </section>
+       
+        <section>
+            <h2>Liens Utiles</h2>
+            <p>Site de lecture en ligne</p>
+            <ul>
+                <li><a href="https://www.qidian.com/" target="_blank"> 起点阅读 </a></li>
+                <li><a href="https://www.jjwxc.net/" target="_blank"> 晋江文学城 </a></li>
+                <li><a href="https://www.69shuba.com/?t=2023" target="_blank"> 69书吧 </a></li>
+                <li><a href="https://www.shubl.com/" target="_blank"> 书耽 </a></li>
+            </ul>
+
+            <p>Le site du jeu:</p>
+            <ul>
+                <li><a href="https://www.4399.cn/" target="_blank">4399游戏盒 </a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Mes favoris</h2>
+            <table>
+                <tr>
+                    <th>Nom</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                </tr>
+                <?php include 'Livre.php'; ?>
+            </table>
+        </section>
+
+        <section>
+            <h2>Formulaire</h2>
+            <form>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required><br>
+        
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required><br>
+        
+                <label for="interets">Intérêts :</label>
+                <select id="interets" name="interets">
+                    <option value="Livres">Livres</option>
+                    <option value="jeux">Jeux</option>
+                    <option value="autre">Autre</option>
+                </select><br>
+        
+                <fieldset>
+                    <legend>Choix préféré :</legend>
+                    <input type="radio" id="choix1" name="choix" value="choix1">
+                    <label for="choix1">Choix 1</label>
+        
+                    <input type="radio" id="choix2" name="choix" value="choix2">
+                    <label for="choix2">Choix 2</label><br>
+                </fieldset>
+        
+                <label for="commentaire">Laisser un commentaire :</label>
+                <textarea id="commentaire" name="commentaire" rows="4" cols="50"></textarea><br>
+        
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+        
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mon Site Personnel. Tous droits réservés.</p>
+        <p><a href="ML.html">Mentions Légales</a></p>
+    </footer>
+</body>
+</html>
+
